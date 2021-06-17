@@ -32,6 +32,7 @@ jobs:
           pip3 install -e '.[test]'
           python3 -m coverage run -m pytest
           python3 -m coverage report
+          ls
 
   build_and_pub:
     runs-on: ubuntu-latest
